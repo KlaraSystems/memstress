@@ -1,0 +1,22 @@
+memstress
+
+A small tool for testing route creation policies against a memory limit
+
+usage: memstress [Hhmnrvwxyz]
+       memstress: apply memory pressure either through
+       memory allocations or route creation
+       -H       display a route creation time histogram
+       -h       print help (this message)
+       -m       perform memory allocation test
+       -n       allocation size in pages for memory tests
+                (default: vm.stats.vm.page_count)
+       -r       perform route addition tests
+       -v       veto size in pages (default: vm.v_free_target)
+                Size in pages that would veto an allocation/route addition
+       -w       wait between allocation/addition before freeing
+       -x       number of addresses in x part of subnet
+       -y       number of addresses in y part of subnet
+       -z       number of addresses in z part of subnet
+
+       Route addition tests will add routes from 10.z.y.x addresses via 1.0.0.1
+       this needs to be configured on an interface or the test will fail immediately
