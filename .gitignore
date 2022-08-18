@@ -1,0 +1,9 @@
+.*swp
+.depend
+.depend.libroute.o
+.depend.memstress.o
+libroute.o
+memstress
+memstress.debug
+memstress.full
+memstress.o
